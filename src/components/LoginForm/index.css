@@ -1,0 +1,42 @@
+/* Write your CSS code here */
+*{
+    font-family: "roboto";
+}
+.login-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-image{
+    height: 200px;
+    width: 350px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+}
+.website.logo{
+    height: 150px;
+}
+label{
+    color: #475569;
+    font-size: 12px;
+}
+input{
+    background-color: #d7dfe9;
+    margin-bottom: 10px;
+}
+.submit-button{
+    background-color: #0b69ff;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+}
+.error-msg{
+    color: #ff0b37;
+    font-size: 12px;
+}

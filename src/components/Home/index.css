@@ -1,0 +1,38 @@
+/* Write your CSS code here */
+*{
+    font-family: "roboto";
+}
+.home-container{
+    display: flex;
+    justify-content: space-between;
+}
+.text-container{
+    margin-left: 50px;
+}
+h1{
+    color: #1e293b;
+    font-size: 60px;
+    font-weight: bold;
+    width: 580px;
+}
+p{
+    color: #d7dfe9;
+    font-size: 18px;
+    width: 500px;
+}
+.shop-button{
+    color: #ffffff;
+    background-color: #0b69ff;
+    padding-left:15px ;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 13px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+}
+.image{
+    height: 600px;
+    margin-right:50px ;
+}
