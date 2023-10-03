@@ -6,11 +6,11 @@ class LoginForm extends Component{
     state={username:'', password:'', errorMsg:''}
 
     changeUserName=event=>{
-      this.setSate({username:event.target.value})
+      this.setState({username:event.target.value})
     }
 
     changePassword=event=>{
-      this.setSate({password:event.target.value})
+      this.setState({password:event.target.value})
     }
 
     navigateToHomeRoute=()=>{
