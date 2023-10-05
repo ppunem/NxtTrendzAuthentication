@@ -33,7 +33,7 @@ class LoginForm extends Component{
         this.navigateToHomeRoute()
       }
       else{
-        this.setSate({errorMsg: response.error_msg})
+        this.setState({errorMsg: response.error_msg})
       }
 
     }
