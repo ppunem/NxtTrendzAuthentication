@@ -1,42 +1,65 @@
 /* Write your CSS code here */
-*{
-    font-family: "roboto";
+* {
+  font-family: 'roboto';
 }
-.login-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.login-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding-left: 30px;
+  padding-right: 30px;
 }
-.login-image{
-    height: 200px;
-    width: 350px;
+.logo-container {
+  text-align: center;
 }
-.form-container{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    box-shadow: 0px 4px 16px 0px #bfbfbf;
+.login-image {
+  height: 400px;
 }
-.website.logo{
-    height: 150px;
+.main {
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
 }
-label{
-    color: #475569;
-    font-size: 12px;
+.form-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 400px;
+  margin-top: 50px;
 }
-input{
-    background-color: #d7dfe9;
-    margin-bottom: 10px;
+.nxt-trendz-logo {
+  height: 80px;
+  width: 250px;
 }
-.submit-button{
-    background-color: #0b69ff;
-    padding: 10px;
-    color: #ffffff;
-    font-size: 12px;
-    border: none;
-    border-radius: 10px;
+
+label {
+  color: #475569;
+  font-size: 12px;
+  margin-bottom: 5px;
 }
-.error-msg{
-    color: #ff0b37;
-    font-size: 12px;
+input {
+  background-color: #d7dfe9;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: none;
+  width: 80%;
+}
+.submit-button {
+  background-color: #0b69ff;
+  padding: 10px;
+  color: #ffffff;
+  font-size: 12px;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+}
+.error-msg {
+  color: #ff0b37;
+  font-size: 12px;
 }
