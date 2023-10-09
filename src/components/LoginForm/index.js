@@ -15,7 +15,7 @@ class LoginForm extends Component{
 
     navigateToHomeRoute=()=>{
       const {history} = this.props
-      history.push("/")
+      history.replace("/")
     }
 
     submitForm=async event=>{
@@ -29,6 +29,8 @@ class LoginForm extends Component{
       }
 
       const response= await fetch(url,options)
+      const data=response.json()
+        
       if (response.ok===true){
         this.navigateToHomeRoute()
       }
@@ -59,9 +61,9 @@ class LoginForm extends Component{
         return (
         <div className="login-container">
           <img className="login-image" src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-login-img.png" alt="website login"/>
-          <div className="form-container">
-            <img className="website-logo" src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png" alt="website logo"/>
-            <form onSubmit={this.submitForm}>
+          <div className="main">
+            <img className="nxt-trendz-logo" src="https://assets.ccbp.in/frontend/react-js/nxt-trendz-logo-img.png" alt="website logo"/>
+            <form onSubmit={this.submitForm} className="form-container>
               <label htmlFor="nameInput">USERNAME</label>
               <input type="text" value={username} id="nameInput" placeholder="Username" onChange={this.changeUserName}/>
               <label htmlFor="passwordInput">PASSWORD</label>
