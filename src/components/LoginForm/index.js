@@ -32,9 +32,24 @@ class LoginForm extends Component{
       if (response.ok===true){
         this.navigateToHomeRoute()
       }
-      else{
-        this.setState({errorMsg: response.error_msg})
-      }
+      else if (response.status === 401) {
+      this.setState({errorMsg: data.error_msg, showErrorMsg: true})
+    } else if (password === '') {
+      this.setState({
+        errorMsg: 'Enter Valid Password',
+        showErrorMsg: true,
+      })
+    } else if (response.status === 404) {
+      this.setState({
+        errorMsg: 'Username is not found',
+        showErrorMsg: true,
+      })
+    } else {
+      this.setState({
+        errorMsg: "Username and Password didn't match",
+        showErrorMsg: true,
+      })
+    }
 
     }
 
